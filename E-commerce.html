@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-image: linear-gradient(45deg,rgba(72, 223, 13, 0.977),rgba(13, 199, 223, 0.977),rgba(244, 17, 244, 0.977));
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+
+.navbar{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+    background-color: #f3f4f6;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+.navbar .logo h1{
+    color: #424144;
+    border-bottom: 4px solid#fd6561;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li:hover{
+    border-bottom: 4px solid #f63e4e;
+    transition: 0.3s ease;
+}
+
+.navbar .menu li a{
+    display: block;
+    margin-left: 20px;
+    color: #424144;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .menu li .active{
+    border-bottom: 4px solid #f63e4e;
+}
+
+.content h1{
+    font-size: 40px;
+}
+.content p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.content button{
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    background: #f63e4e;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.pheading{
+    text-align: center;
+    margin: 50px 0;
+    color: #424144;
+}
+/* product */
+
+.sec{
+    padding: 10px 5%;
+}
+.products{
+    display: flex;
+    grid-template-columns:max-content
+}
+
+.products .card{
+    width: 310px;
+    background: #f5f5f5;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 130px;
+    margin-bottom: 20px;
+}
+.products .card img{
+    height: 250px;
+    width: 100%;
+}
+        </style>
+        <title>My-Shops</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo"><h1>My-Shops</h1></div>
+            <ul class="menu">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">New Arrivals</a></li>
+                <li><a href="">Fashion</a></li>
+                <li><a href="">Account</a></li>     
+            </ul>
+
+        </nav>
+        <h1 class="pheading">Latest Products</h1>
+
+        <section class="sec">
+            <div class="products">
+        <div class="card">
+            <div class="img"><img src="watch.jpg" alt=""></div>
+            <div class="desc">Unisex</div>
+            <div class="title">Smart Watch</div>
+            <div class="box"></div>
+            <div class="price">₹1999</div>
+            <button class="btn">Buy Now </button>
+        </div>
+        <div class="card">
+            <div class="img"><img src="shoes.webp" alt=""></div>
+            <div class="desc">Female</div>
+            <div class="title">Sports Shoes</div>
+            <div class="box"></div>
+            <div class="price">₹2499</div>
+            <button class="btn">Buy Now </button>
+        </div>
+        <div class="card">
+            <div class="img"><img src="headphone.jpg" alt=""></div>
+            <div class="desc">Male</div>
+            <div class="title">Head phone</div>
+            <div class="box"></div>
+            <div class="price">₹1599</div>
+            <button class="btn">Buy Now </button>
+        </div>
+        </div>
+    </div></section>
+    </body>
+</html>
